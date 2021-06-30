@@ -22,7 +22,22 @@
             </a>
         </p>
         <p>
-            Run this bookmarklet while opened a steam page of a game, it will open the steamdb page of that game.
+            Run this bookmarklet while opened a steam page of a game, it will
+            open the steamdb page of that game.
+        </p>
+
+        <h2>Open in pttweb</h2>
+        <p>
+            The bookmarklet:
+            <a
+                href='javascript: {let is_ask = location.href.substring(19, 22) == "ask";let sub = null;if (is_ask) {sub = location.href.substring(38);sub = decodeURIComponent(sub);} else {sub = location.href.substring(19);}function get_base_url() {return "https://www.pttweb.cc/";}void window.open(get_base_url() + sub);}'
+            >
+                Open in pttweb
+            </a>
+        </p>
+        <p>
+            Run this bookmarklet while opened a <a href="https://www.ptt.cc/">ptt.cc</a> page, it will
+            open the page in pttweb.
         </p>
     </body>
 </html>
