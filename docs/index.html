@@ -7,5 +7,22 @@
         <title>My bookmarklet collection</title>
     </head>
     <body>
+        <style>
+            p {
+                padding-left: 2em;
+            }
+        </style>
+        <h2>Open in steamdb</h2>
+        <p>
+            The bookmarklet:
+            <a
+                href='javascript: {let id = location.href.substring(35, 42); function get_base_url() { return "https://steamdb.info/app/"; } void window.open(get_base_url() + id);}'
+            >
+                Open in steamdb
+            </a>
+        </p>
+        <p>
+            Run this bookmarklet while opened a steam page of a game, it will open the steamdb page of that game.
+        </p>
     </body>
 </html>
