@@ -39,5 +39,25 @@
             Run this bookmarklet while opened a <a href="https://www.ptt.cc/">ptt.cc</a> page, it will
             open the page in pttweb.
         </p>
+
+        <h2>Remove all videos from Youtube Watch Later playlist</h2>
+        <p>
+            The bookmarklet:
+            <a
+                href='javascript: {setInterval(function () {document.querySelector("#primary button[aria-label=\"Action menu\"]").click();var things = document.evaluate("//span[contains(text(),\"Remove from\")]",document,null,XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,null);for (var i = 0; i < things.snapshotLength; i++) {things.snapshotItem(i).click();}}, 1000);}'
+            >
+                Remove all videos from Youtube WL
+            </a>
+        </p>
+        <p>
+            Run this bookmarklet while opened
+            <a href="https://www.youtube.com/playlist?list=WL"
+                >Youtube Watch Later playlist</a
+            >
+            page, it will remove videos from the list one by one.
+        </p>
+        <p>
+            The script comes from this <a href="https://gist.github.com/astamicu/eb351ce10451f1a51b71a1287d36880f">gist</a>.
+        </p>
     </body>
 </html>
